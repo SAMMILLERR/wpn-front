@@ -1,5 +1,19 @@
 // frontend/main.js
 
+window.env = {
+    firebaseConfig: {
+      apiKey: "AIzaSyBpWQq68uq2J8k-oyOVbmgjxzVUect_0sk",
+      authDomain: "push-notification-2025-444f3.firebaseapp.com",
+      projectId: "push-notification-2025-444f3",
+      storageBucket: "push-notification-2025-444f3.firebasestorage.app",
+      messagingSenderId: "851252743713",
+      appId: "1:851252743713:web:628f7f93517a6943e25d60",
+      measurementId: "G-H85B5VE32B",
+      vapidKey: "BMWR9r_4b5mgSOrF92-BBTFTNPH9CuForq-wjEj9aLsAK74lc2EQVcX2lmdz3YfC86CWSDS2YfPwzBbq239gefk"
+    },
+    backendUrl: "http://localhost:8000"
+  };
+
 // Initialize Firebase
 firebase.initializeApp(window.env.firebaseConfig);
 const messaging = firebase.messaging();
